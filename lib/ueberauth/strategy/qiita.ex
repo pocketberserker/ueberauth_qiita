@@ -43,8 +43,8 @@ defmodule Ueberauth.Strategy.Qiita do
     token = Ueberauth.Strategy.Qiita.OAuth.get_token!([code: code], opts)
 
     if token.access_token == nil do
-      err = token.other_params["error"]
-      desc = token.other_params["error_description"]
+      err = token.other_params["type"]
+      desc = token.other_params["message"]
       set_errors!(conn, [error(err, desc)])
     else
       fetch_user(conn, token)
