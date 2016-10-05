@@ -104,7 +104,7 @@ defmodule Ueberauth.Strategy.Qiita do
       name: user["name"],
       nickname: user["id"],
       urls: %{
-        qiita: "https://twitter.com/#{user["id"]}",
+        qiita: "https://qiita.com/#{user["id"]}",
         website: user["website_url"]
       }
     }
