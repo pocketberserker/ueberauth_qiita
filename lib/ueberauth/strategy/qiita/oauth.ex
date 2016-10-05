@@ -43,9 +43,10 @@ defmodule Ueberauth.Strategy.Qiita.OAuth do
   end
 
   def get_token!(params \\ [], opts \\ []) do
-    opts
-    |> client
-    |> OAuth2.Client.get_token!(params)
+    resp = opts
+      |> client
+      |> OAuth2.Client.get_token!(params)
+    %{resp | access_token: resp.other_params["token"]}
   end
 
   # Strategy Callbacks
