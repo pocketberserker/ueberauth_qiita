@@ -125,7 +125,7 @@ defmodule Ueberauth.Strategy.Qiita do
 
   defp fetch_user(conn, token) do
     conn = put_private(conn, :qiita_token, token)
-    path = "/api/v2/authenticated_user"
+    path = "/v2/authenticated_user"
     case OAuth2.AccessToken.get(token, path) do
       {:ok, %OAuth2.Response{status_code: 401, body: _body}} ->
         set_errors!(conn, [error("token", "unauthorized")])

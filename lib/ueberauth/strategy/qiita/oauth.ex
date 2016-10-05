@@ -10,9 +10,9 @@ defmodule Ueberauth.Strategy.Qiita.OAuth do
 
   @defaults [
     strategy: __MODULE__,
-    site: "https://qiita.com",
+    site: "https://qiita.com/api",
     authorize_url: "https://qiita.com/api/v2/oauth/authorize",
-    token_url: "/api/v2/access_tokens",
+    token_url: "https://qiita.com/api/v2/access_tokens",
   ]
 
   @doc """
