@@ -1,6 +1,10 @@
 # Überauth Qiita
 
 [![Build Status](https://travis-ci.org/pocketberserker/ueberauth_qiita.svg?branch=master)](https://travis-ci.org/pocketberserker/ueberauth_qiita)
+[![Hex Version][hex-img]][hex]
+
+[hex-img]: https://img.shields.io/hexpm/v/ueberauth_qiita.svg
+[hex]: https://hex.pm/packages/ueberauth_qiita
 
 > Qiita OAuth2 strategy for Überauth.
 
