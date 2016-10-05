@@ -6,6 +6,7 @@ defmodule UeberauthQiita.Mixfile do
   def project do
     [app: :ueberauth_qiita,
      version: "0.1.0",
+     package: package,
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -33,5 +34,12 @@ defmodule UeberauthQiita.Mixfile do
      {:oauth2, "0.6.0"},
      {:ex_doc, "~> 0.2", only: :dev},
      {:earmark, ">= 0.0.0", only: :dev}]
+  end
+
+  defp package do
+    [files: ["lib", "mix.exs", "README.md", "LICENSE"],
+      maintainers: ["pocketberserker"],
+      licenses: ["MIT"],
+      links: %{"GitHub": @url}]
   end
 end
