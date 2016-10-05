@@ -1,5 +1,7 @@
 # Überauth Qiita
 
+[![Build Status](https://travis-ci.org/pocketberserker/ueberauth_qiita.svg?branch=master)](https://travis-ci.org/pocketberserker/ueberauth_qiita)
+
 > Qiita OAuth2 strategy for Überauth.
 
 Inspired by [Überauth for Facebook](https://github.com/ueberauth/ueberauth_facebook)
