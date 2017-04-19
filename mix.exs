@@ -6,15 +6,15 @@ defmodule UeberauthQiita.Mixfile do
   def project do
     [app: :ueberauth_qiita,
      version: "0.1.0",
-     package: package,
+     package: package(),
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      source_url: @url,
      homepage_url: @url,
-     description: description,
+     description: description(),
      deps: deps(),
-     docs: docs]
+     docs: docs()]
   end
 
   def application do
